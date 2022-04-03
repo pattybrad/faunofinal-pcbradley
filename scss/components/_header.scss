@@ -1,0 +1,29 @@
+$pad:2px;
+$paletaCromatica:(
+	bgPrimario:linear-gradient(to top,transparent,lightcoral),
+	bgSecundario:lightcoral,
+	fontPrimario:black,
+	fontSecundario:white
+	);
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: map-get($paletaCromatica,bgPrimario);
+      .navbar-collapse{
+	justify-content: flex-end;
+	cursor:pointer;
+}
+}
+li:hover{
+    background-color: lightblue; 
+}
+a {
+    text-decoration: none;
+    color: black;
+    }
+a:hover{
+    color: white;
+}

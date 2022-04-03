@@ -1,0 +1,154 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+li {
+    list-style: none;
+    margin: 16px;
+    padding: 8px;
+    cursor: pointer;
+}
+h2 {
+    font-size: 32px;
+}
+h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 5px 5px #558ABB;
+    transform: rotate(-10deg);
+}
+li:hover{
+    background-color: lightblue; 
+}
+ul {
+    display: flex;
+}
+header{
+    background-image: linear-gradient(to top,transparent,lightcoral)     
+}
+p{
+    text-align: justify;
+    margin: 25px;
+    font-size: 20px;
+}
+
+ .logoP, .img-fluid{
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+}
+.Hero, .Section-A, .Section-B, .Section-C, .Section-D{
+    background-color: #fff2e5;
+}
+.Header{
+    grid-area: Header;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.Footer{
+    grid-area: Footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rrss{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+/* ARCHIVO INDEX */
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 800px 400px 400px 150px;
+    grid-gap: 0px 0px;
+    grid-template-areas:
+    "Header Header"
+    "Hero Hero"
+    "Section-A Section-B"
+    "Section-C Section-D"
+    "Footer Footer";
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+}
+.Hero{
+    grid-area: Hero; 
+    background-image: url(https://images.unsplash.com/photo-1546237769-6f84ec1a512a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section-A{
+    grid-area: Section-A;
+    background-image: url(https://images.unsplash.com/photo-1612884610549-ce221d92514a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+.Section-B{
+    grid-area: Section-B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section-C{
+    grid-area: Section-C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section-D{
+    grid-area: Section-D;
+    background-image: url(https://images.unsplash.com/photo-1551645701-0e68cfc880f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* VISTA MOBILE: ARCHIVO INDEX */
+
+
+@media only screen and (max-width: 768px){
+.container {  
+    display: grid;                                  
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 600px 400px 400px 400px 400px 150px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Header"
+    "Hero"
+    "Section-B"
+    "Section-A"
+    "Section-C"
+    "Section-D"
+    "Footer";
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;}
+    }

@@ -1,0 +1,1 @@
+Maquetado proyecto final. Página INICIO (Index) con grids y el resto se usó Bootsrap.

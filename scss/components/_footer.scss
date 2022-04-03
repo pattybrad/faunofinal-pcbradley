@@ -1,0 +1,16 @@
+$pad:2px;
+
+@mixin flex-horizontal-around{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.footer-flex{
+	@include flex-horizontal-around;
+	}
+footer{
+	padding:$pad;
+	background-color: white;
+	
+}
+
